@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, p, label, input, td{
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* TITULO  */
+
+#titulo {
+    width: 100%;
+    height: 20vh;
+    font-size: 3.5em;
+    text-align: center;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    padding: 0.0em 0em;
+    margin-top: 1em;
+}
+
+#titulo h1:nth-child(2){
+    color: #00205a;
+    padding: 0.1em 0.1em;
+    text-transform: uppercase;
+    /* font-weight: normal; -> deixa a fonte normal  */
+}
+
+#titulo h1:nth-child(1){
+    display: flex;
+    justify-content: center;
+    width: 24vh;
+    color: #FFF;
+    height: 8.5vh;
+    background: #00205a;
+    border-radius: 0.1em;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    font-weight: normal;
+} 
+/* CORPO */
+
+#corpo{
+    margin-top: 4em;
+}
+
+.dados form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.dados input {
+    margin-top: 6px;
+    width: 25em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    height: 4em;
+    border: none;
+    box-shadow: 0px 0px 10px #E0E0E0, 0px 0px 10px #E0E0E0;
+    color: #B2B2B2;
+    margin-bottom: 15px;
+}
+
+#entrar{
+    margin-top: 1.5em;
+    color: #FFF;
+    background: #00205a;
+    width: 8.5em;
+    height: 3.5em;
+    border-radius: 0.3em;
+    border: none;
+    cursor: pointer;   
+    text-transform: uppercase;
+}
+
+/* .conteudo{
+    display: flex;
+    justify-content: space-around;
+} */
+
+.dados{
+    margin-right: 14em;
+}
+
+.dados label{
+    display: flex;
+    text-align: left;
+    margin-right: 18em;
+    color: gray;
+    font-size: 15px;
+}
+
+.dados label p{
+    display: flex;
+    text-align: left;
+    margin-right: 6em;
+    color: gray;
+    font-size: 15px;
+}
+
+.icone img{
+    display: none;
+}
+
+.planta img{
+    display: none;
+}
+
+.homem img{
+    display: none;
+}
+/*//////////////////////////////////////////////////////
+/////////////////RESPONSIVIDADE/////////////////////////
+//////////////////////////////////////////////////////*/
+
+
+
+/* TABLET */
+
+
+
+@media screen and (max-width:768px){
+    
+    #titulo {
+        width: 100%;
+        height: 10vh;
+        font-size: 4.5em;
+        text-align: center;
+        background: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 0.0em 0em;
+        margin-top: 1em;
+    }
+    #titulo h1:nth-child(2){
+        color: #00205a;
+        padding: 0.1em 0.1em;
+        text-transform: uppercase;
+        font-weight: normal; /*-> deixa a fonte normal  */
+    }
+    
+    #titulo h1:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        width: 35vh;
+        color: #FFF;
+        height: 10.5vh;
+        background: #00205a;
+        border-radius: 0.1em;
+        text-transform: uppercase;
+        align-items: center;
+        text-align: center;
+        font-weight: normal;
+    }
+    
+    .img-principal img{
+        display: none;
+    }
+    
+    /* .conteudo {
+        display: flex;
+        justify-content: center;
+        margin-left: 25vh;
+    } */
+    
+    #corpo {
+        margin-top: 8em;
+    }
+    
+    
+    .dados form {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .icone img {
+        display: block;
+        position: absolute;
+        left: 688px;
+        top: 323px;
+    }
+    
+    
+    .planta img {
+        display: block;
+        position: absolute;
+        left: 660px;
+        top: 706px;
+        width: 104px;
+    }
+    
+    .homem img {
+        display: block;
+        position: absolute;
+        left: 1px;
+        top: 640px;
+        width: 100px;
+    }
+}
+
+/* mobile */
+
+@media screen and (max-width:425px){
+    
+    
+    #titulo {
+        width: 100%;
+        height: 21vh;
+        font-size: 2.5em;
+        text-align: center;
+        background: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 0.0em 0em;
+        margin-top: 1em;
+    }
+    
+    
+    #titulo h1:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        width: 22vh;
+        color: #FFF;
+        height: 6.5vh;
+        background: #00205a;
+        border-radius: -0.9em;
+        text-transform: uppercase;
+        align-items: center;
+        text-align: center;
+        font-weight: normal;
+    }
+    
+    .dados input {
+        margin-top: 6px;
+        width: 22em;
+        border-radius: 0.5em;
+        font-size: 1em;
+        height: 4em;
+        border: none;
+        box-shadow: 0px 0px 10px #E0E0E0, 0px 0px 10px #E0E0E0;
+        color: #B2B2B2;
+        margin-bottom: 15px;
+    }
+    
+    
+    .dados label {
+        display: flex;
+        text-align: left;
+        margin-right: 15em;
+        color: gray;
+        font-size: 15px;
+    }
+    
+    #corpo {
+        margin-top: 1em;
+    }
+    
+    .homem img{
+        display: none;
+    }
+    .icone img{
+        display: none;
+    }
+    
+    .planta img {
+        display: block;
+        position: absolute;
+        left: 351px;
+        top: 767px;
+        width: 69px;
+    }
+    
+}
+
+@media screen and (max-width:375px){
+    
+   .planta img{
+       display: none;
+   }
+}
+
